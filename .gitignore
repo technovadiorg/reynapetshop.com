@@ -1,0 +1,81 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# VSCode / IDE / Editor config
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+*.sqlite3
+
+# Migrations (opsiyonel – dikkatli kullan!)
+**/migrations/*.pyc
+**/migrations/__pycache__/
+# aşağı satır migrations dosyalarını tamamen ignore eder (ilk kez projeyi başlatmıyorsan dikkat et)
+# **/migrations/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Test results
+.test/
+
+# Environments
+.env
+.env.*
+
+# MyPy, Pyright, Ruff, etc.
+.mypy_cache/
+.pyright/
+ruff_cache/
+
+# Compiled files
+*.so
+
+# Node (eğer frontend de varsa)
+node_modules/
+npm-debug.log
+yarn-error.log
+dist/
+
+# Docker (varsa)
+*.pid
+*.pid.lock
+docker-compose.override.yml
+
+# JetBrains
+*.iml
+.idea/
+
+# Gunicorn
+gunicorn.pid
