@@ -1,3 +1,8 @@
+# Created by https://www.toptal.com/developers/gitignore/api/django
+# Edit at https://www.toptal.com/developers/gitignore?templates=django
+
+
+
 # Python cache
 __pycache__/
 *.py[cod]
@@ -38,35 +43,93 @@ static_root/
 # aşağı satır migrations dosyalarını tamamen ignore eder (ilk kez projeyi başlatmıyorsan dikkat et)
 # **/migrations/
 
-# Coverage reports
+# Unit test / Coverage reports
 htmlcov/
+*.cover
 .coverage
+.coverage.*
+coverage.xml
 .tox/
 nosetests.xml
-coverage.xml
 *.cover
 *.py,cover
+.nox/
+.cache
+nosetests.xml
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
 
 # Test results
 .test/
 
+# Translations
+*.mo
+
+
 # Environments
 .env
 .env.*
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # MyPy, Pyright, Ruff, etc.
 .mypy_cache/
 .pyright/
 ruff_cache/
 
-# Compiled files
+# Compiled files / C extensions
 *.so
 
-# Node (eğer frontend de varsa)
+# Node 
 node_modules/
 npm-debug.log
 yarn-error.log
+
+
+# Distribution / packaging
+.Python
+
+
+
+# Distribution / packaging
 dist/
+build/
+develop-eggs/
+lib/
+lib64/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
 
 # Docker (varsa)
 *.pid
@@ -80,4 +143,53 @@ docker-compose.override.yml
 # Gunicorn
 gunicorn.pid
 
-uploads/
+
+### Static Files/Uploads(Image, Video, Media etc.) ###
+uploads
+
+
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+
+# pdm
+#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
+#pdm.lock
+#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
+#   in version control.
+#   https://pdm.fming.dev/#use-with-ide
+.pdm.toml
+
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+
+# mkdocs documentation
+/site
+
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
