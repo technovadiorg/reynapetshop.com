@@ -90,7 +90,7 @@ pipeline {
         stage('Archive Artifacts') {
             steps {
                 script {
-                    archiveArtifacts allowEmptyArchive: true, artifacts: '*/**/*', onlyIfSuccessful: true
+                    archiveArtifacts allowEmptyArchive: true, artifacts: '*', onlyIfSuccessful: true
                 }
             }
         }
